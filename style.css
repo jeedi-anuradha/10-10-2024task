@@ -1,0 +1,39 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.container{
+    display:inline-block;
+    width: 500px;
+    /* border: 2px solid; */
+    text-align: center;
+}
+.container>.img1{
+    /* display: block; */
+    width:500px;
+}
+img{
+    display: none;
+    width:300px;
+    transition: all 40s ease;
+}
+.cat,.dog,.rabbit,.parrot{
+    padding:10px;
+    margin:5px;
+    border: 0;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: darkgreen;
+    color: white;
+}
+.cat:hover~.img1,
+.dog:hover~.img2,
+.rabbit:hover~.img3,
+.parrot:hover~.img4{
+    display: block;
+    width: 220px;
+    width:500px;
+    /* display: flex; */
+    text-align: center;
+}
